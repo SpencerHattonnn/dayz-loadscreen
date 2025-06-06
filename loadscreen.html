@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Welcome to Syndicate Gaming</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+      color: white;
+      text-shadow: 2px 2px 5px black;
+    }
+    #bg-video {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+      z-index: -1;
+      filter: brightness(0.5);
+    }
+    .overlay {
+      position: relative;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.35);
+    }
+    h1 {
+      font-size: 3em;
+      margin-bottom: 0.25em;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      font-size: 1.3em;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    li {
+      margin: 10px 0;
+    }
+    .discord {
+      margin-top: 20px;
+      font-size: 1.1em;
+    }
+    .rules {
+      margin-top: 30px;
+      max-width: 600px;
+      text-align: left;
+      font-size: 1.1em;
+    }
+    a {
+      color: #4da6ff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    audio {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <video autoplay muted loop id="bg-video" playsinline>
+    <source src="https://cdn.pixabay.com/vimeo/274294073/forest-13822.mp4?width=1920&hash=5e0a85740c5c03e678a4d28a51b5022a6b9a5d23" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="overlay">
+    <h1>Welcome to Syndicate Gaming</h1>
+    <ul>
+      <li>🛒 Traders North & South</li>
+      <li>🧢 Custom Clothing & Gear</li>
+      <li>🗺️ Group System with Map Markers</li>
+      <li>💰 High Loot PvP Environment</li>
+      <li>🇬🇧 UK-Based Server</li>
+    </ul>
+
+    <div class="discord">
+      📢 Join our Discord: <a href="https://discord.gg/kw8kcT3BVv" target="_blank" rel="noopener noreferrer">discord.gg/kw8kcT3BVv</a>
+    </div>
+
+    <div class="rules">
+      <h2>📖 Server Rules:</h2>
+      <ul>
+        <li>✅ Respect all players and staff</li>
+        <li>✅ No cheating, exploiting, or glitching</li>
+        <li>✅ No racism, hate speech, or harassment</li>
+        <li>✅ KOS is allowed unless in safe zones</li>
+        <li>✅ Safe zone rules must be followed</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Background Music -->
+  <audio autoplay loop>
+    <source src="https://cdn.pixabay.com/download/audio/2022/03/17/audio_b60e4a8dce.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
+</body>
+</html>
